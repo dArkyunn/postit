@@ -1,0 +1,24 @@
+<textarea [(ngModel)]="text" title="Note" maxlength="200"></textarea>
+<div class="controls">
+    <div class="control" (click)="onAccept()">
+        <span class="material-symbols-outlined">
+            save
+        </span>
+
+        Save
+    </div>
+    <div class="control" (click)="onDelete()" *ngIf="id !== undefined">
+        <span class="material-symbols-outlined">
+            delete
+        </span>
+
+        Delete
+    </div>
+    <div class="control" (click)="onCancel()">
+        <span class="material-symbols-outlined">
+            arrow_back
+        </span>
+
+        Back
+    </div>
+</div>

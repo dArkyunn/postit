@@ -1,0 +1,23 @@
+@use "src/variables";
+
+:host(app-note) {
+    width: 100%;
+    max-width: 200px;
+    height: 150px;
+    border-radius: 13pt;
+    background-color: variables.$note-color-bg;
+    color: variables.$note-color-fg;
+    padding: 15px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+p {
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    overflow-wrap: anywhere;
+}

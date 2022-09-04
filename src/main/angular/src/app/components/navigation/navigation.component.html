@@ -1,0 +1,20 @@
+<h1 (click)="onHome()"><a routerLink="/">Post<span style="color: #FFFF99">IT</span></a></h1>
+
+<div class="modeToggle" (click)="changeMode()">
+    <span class="material-symbols-outlined" *ngIf="darkMode">
+        light_mode
+    </span>
+
+    <span class="material-symbols-outlined" *ngIf="!darkMode">
+        dark_mode
+    </span>
+</div>
+<div class="newNote" (click)="onCreate()">
+    <a routerLink="/edit">
+        <span class="material-symbols-outlined">
+        add
+        </span>
+
+        Create
+    </a>
+</div>

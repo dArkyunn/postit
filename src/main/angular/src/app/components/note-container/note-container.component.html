@@ -1,0 +1,3 @@
+<app-note *ngFor="let note of sortedNotes; index as i; trackBy: getIdTracking" [id]="note.id" (click)="moveToNote(i)">
+    {{ note.text }}
+</app-note>

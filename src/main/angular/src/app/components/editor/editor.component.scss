@@ -1,0 +1,49 @@
+@use "src/variables";
+
+:host {
+    height: 85vh;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+textarea {
+    width: 95%;
+    height: 100%;
+    position: relative;
+    outline: none;
+    background-color: variables.$note-color-bg;
+    color: variables.$color-fg;
+    resize: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 13pt;
+    border: none;
+}
+
+body.dark :host textarea {
+    background-color: variables.$note-color-bg;
+    color: variables.$color-fg;
+}
+
+.controls {
+    display: flex;
+    padding: 15px;
+}
+
+.control {
+    height: 24px;
+    padding: 10px 15px;
+    background-color: variables.$note-color-bg;
+    color: variables.$note-color-fg;
+    margin: 5px;
+    border-radius: 13pt;
+    cursor: pointer;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
